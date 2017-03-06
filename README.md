@@ -1,5 +1,6 @@
 # DishFinder
 Dish Finder is a Node.js web application. It provides reviews for restaurant menu items.
+
 Tech Stack: HTML, CSS, JavaScript, Bootstrap Node.js, Handlebars(template engine), MongoDB
 
 
