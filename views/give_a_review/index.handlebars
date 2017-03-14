@@ -1,1 +1,47 @@
-index.handlebars
+<nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="/img/white_logo.png" class="img-responsive" alt="logo" style="margin-top:-25px;"></a>
+                </div>
+                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                    <div class="col-md-8 col-xs-12 nav-wrap">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/" class="page-scroll">Home</a></li>
+                            <li><a href="#owl-hero" class="page-scroll">Give a Review</a></li>
+                            <li><a href="/addnewbusiness" class="page-scroll">Add Your Business</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+</nav>
+
+<section id="writeReview">
+        <div class="container">
+            <h2><strong>Give A Review</strong></h2>
+            <hr class="sep">
+            <div class="col-md-6 col-md-offset-3 wow fadeInUp" data-wow-delay=".3s">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="restaurantName" placeholder="Restaurant">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="location" placeholder="Location">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="item" placeholder="Item">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" id="comment" placeholder="Comment"></textarea>
+                    </div>
+                    <a href="#" class="btn-block">Sumbit</a>
+                </form>
+            </div>
+        </div>
+</section>

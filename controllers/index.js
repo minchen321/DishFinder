@@ -11,6 +11,7 @@ router.use('/giveareview', require('./give_a_review'));
 router.use('/login', require('./login'));
 router.use('/signup', require('./signup'));
 router.use('/restaurant', require('./restaurant'));
+router.use('/addnewbusiness', require('./add_new_business'));
 
 
 module.exports = router;

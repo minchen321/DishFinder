@@ -512,3 +512,86 @@ Media Queries Style
     font-size: 18px;
   }
 }
+
+
+
+/*================================ Write a Review========================================== */
+
+#writeReview {
+  margin-top:100px;
+  padding: 60px 0;
+  text-align: center;
+}
+#writeReview h2 {
+  text-transform: uppercase;
+  color: black;
+}
+#writeReview form {
+  margin: 40px 0;
+}
+#writeReview .form-group {
+  margin-bottom: 35px;
+}
+#writeReview .form-control {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 2px solid #24242a;
+  color: #0d0d0d;
+  min-height: 45px;
+}
+#writeReview textarea {
+  height: 140px;
+  resize: none;
+
+}
+/*================================ Add new business========================================== */
+
+#addBusiness {
+  margin-top:100px;
+  padding: 60px 0;
+  text-align: left;
+}
+#addBusiness h2 {
+  text-transform: uppercase;
+  color: black;
+}
+#addBusiness form {
+  margin: 40px 0;
+}
+#addBusiness .form-group {
+  margin-bottom: 35px;
+}
+#addBusiness .form-control {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 2px solid #24242a;
+  color: #0d0d0d;
+  min-height: 45px;
+}
+#addBusiness textarea {
+  height: 140px;
+  resize: none;
+}
+
+.btn-add {
+  background: #24242a;
+  padding: 5px;
+  font-size: 12px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  border: 3px solid #24242a;
+}
+
+.remove_field{
+  text-align: left;
+}
