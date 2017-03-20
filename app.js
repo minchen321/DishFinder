@@ -4,7 +4,12 @@ var exphbs = require('express-handlebars');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-
+var mongo = require('mongodb');
+var mongoose = require('mongoose');
+//connection to database
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/dishFinder');
+var db = mongoose.connection;
 
 // Init App
 var app = express();

@@ -1,34 +1,28 @@
 var express = require('express');
 var router = express.Router();
-
-var Restaurant = require('../models/restaurant');
+var Review = require('../models/review');
 
 router.get('/', function(req,res){
-	res.render('restaurant');
+	res.render('review');
  });
 
 router.post('/', function(req, res){
 	var restaurantName = req.body.restaurantName;
 	var location = req.body.location;
-	var website = req.body.website;
-	var cuisine = req.body.cuisine;
 	var item = req.body.item;
-	var about = req.body.about;
+	var comment = req.body.comment;
 
-	var newRestaurant = new Restaurant({
+	var newReview = new Review({
 		restaurantName:restaurantName,
 		location:location,
-		website:website,
-		cuisine:cuisine,
 		item:item,
-		about:about
+		comment:comment
 	});
 
-	Restaurant.createRestaurant(newRestaurant, function(restaurant){
-		console.log(newRestaurant);
+	Review.createReview(newReview, function(review){
+		console.log(newReview);
 	});
 	
-	// console.log(user);
 	res.redirect('/');
 });
 

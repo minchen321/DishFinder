@@ -13,6 +13,8 @@
     "express-handlebars": "*",
     "body-parser": "*",
     "express-session": "*",
-    "cookie-parser": "*"
+    "cookie-parser": "*",
+    "mongodb": "*",
+    "mongoose": "*"
    }
 }

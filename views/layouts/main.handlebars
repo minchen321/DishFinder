@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
     <title>Dish Finder</title>
@@ -55,14 +55,34 @@
             e.preventDefault();
             if(x < max_fields){ //max input box allowed
                 x++; //text box increment
-                $(wrapper).append('<div><input type="text" class="form-control" name="mytext[]" placeholder="Item" style="margin-top:20px;"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+                $(wrapper).append('<div><input type="text" class="form-control" name="item" placeholder="Item" style="margin-top:20px;"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
             }
         });
-        
+
         $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
             e.preventDefault(); $(this).parent('div').remove(); x--;
-        })
+        });
     });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa18xChQ_4AQ13DHUDMFCiHHpgtnkrXo8&libraries=places&callback=initAutocomplete" async defer></script>
+    <script type="text/javascript">
+            function initAutocomplete() {
+              // Create the autocomplete object, restricting the search to geographical
+              // location types.
+              autocomplete = new google.maps.places.Autocomplete(
+                  (document.getElementById('YOUR_INPUT_ELEMENT_ID')),
+                  {types: ['geocode']});
+
+              // When the user selects an address from the dropdown, populate the address
+              // fields in the form.
+              autocomplete.addListener('place_changed', fillInAddress);
+            }
+
+            function fillInAddress() {
+              // Get the place details from the autocomplete object.
+              var place = autocomplete.getPlace();
+
+            }
     </script>
 </body>
 
