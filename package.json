@@ -11,6 +11,8 @@
   "dependencies": {
   	"express": "*",
     "express-handlebars": "*",
+    "connect-flash": "*",
+    "express-validator": "*",
     "body-parser": "*",
     "express-session": "*",
     "cookie-parser": "*",

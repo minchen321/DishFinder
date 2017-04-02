@@ -89,7 +89,6 @@ Buttons Styles
   transition: all 0.3s ease-in-out;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .btn-transparent:hover,
@@ -416,7 +415,7 @@ Contact Us Style
 Footer Map Style
 ========================================================================== */
 footer {
-  margin-top:-60px; 
+  margin-top:-60px;
   background: #24242a;
   padding-top: 30px;
   padding-bottom: 20px;
@@ -678,4 +677,17 @@ Media Queries Style
       }
       #target {
         width: 345px;
+      }
+
+
+      /*==================== Search Result=========================*/
+      #searchResult {
+        margin-top:100px;
+        padding: 60px 0;
+        text-align: left;
+      }
+
+      #searchResult h2 {
+        text-transform: uppercase;
+        color: black;
       }

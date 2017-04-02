@@ -9,6 +9,7 @@ router.get('/', function(req, res){
 //Get subpages
 router.use('/review', require('./review'));
 router.use('/restaurant', require('./restaurant'));
+router.use('/result', require('./result'));
 
 
 
