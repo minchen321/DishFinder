@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Restaurant = require('../models/restaurant');
+// const getSlug = require('speakingurl');
 
 router.get('/', function(req,res){
 	// res.render('result');

@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-// Review Schema
+//Review Schema
 var ReviewSchema = mongoose.Schema({
     restaurantName: {
       type: String

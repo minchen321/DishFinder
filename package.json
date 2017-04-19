@@ -17,6 +17,7 @@
     "express-session": "*",
     "cookie-parser": "*",
     "mongodb": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "speakingurl": "*"
    }
 }

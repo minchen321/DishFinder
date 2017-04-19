@@ -20,26 +20,17 @@
                 </div>
             </div>
 </nav>
-<section id="searchResult">
+<section id="restaurant_info">
     <div class="container">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <h3><strong>Search Results</strong></h3>
+            <h3><strong>{{restaurant.restaurantName}}</strong></h3>
+            <h4><strong>{{restaurant.phone }}</strong></h4>
+            <h4><strong>{{restaurant.cuisine }}</strong></h4>
+            <h4><strong>{{restaurant.location }}</strong></h4>
+            <h4><strong>{{restaurant.about }}</strong></h4>
             </br>
-                {{#each restaurants}}
-                <a href="/restaurant/{{this.slug}}">
-                    <div class="form-border">
-                        <h4>{{restaurantName}}</h4>
-                        <h6><u>Cuisine:</u>&nbsp{{cuisine}} </h6>
-                        <h6><u>Address</u> </h6>
-                        <h6>{{location}}</h6>
-                        <h6><u>About Us</u></h6>
-                        <h6>{{about}}</h6>
-                        </br>
-                    </div>
-                </a>
-                {{/each}}
-            <p>Don't see what you're looking for?&nbsp<a href="/restaurant">Add a new restaurant.</a></p>
+
         </div>
     </div>
 </section>

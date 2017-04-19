@@ -8,6 +8,9 @@ var RestaurantSchema = mongoose.Schema({
     location: {
       type:String
     },
+    phone:{
+      type:String
+    },
     website: {
       type:String
     },
@@ -18,6 +21,9 @@ var RestaurantSchema = mongoose.Schema({
       type:String
     },
     about:{
+      type:String
+    },
+    slug:{
       type:String
     }
 

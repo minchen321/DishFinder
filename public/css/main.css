@@ -685,9 +685,30 @@ Media Queries Style
         margin-top:100px;
         padding: 60px 0;
         text-align: left;
+        margin-bottom: 500px;
       }
 
       #searchResult h2 {
         text-transform: uppercase;
         color: black;
+      }
+
+
+
+      .form-border{
+        padding: 25px 10px 10px 50px;
+        border-style: solid;
+        border-width: 3px;
+        color:black;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+
+/* ============================= Restaurant_info======================== */
+      #restaurant_info {
+        margin-top:100px;
+        padding: 60px 0;
+        text-align: left;
+        margin-bottom: 500px;
       }
