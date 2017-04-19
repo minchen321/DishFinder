@@ -30,16 +30,18 @@
                 <a href="/restaurant/{{this.slug}}">
                     <div class="form-border">
                         <h4>{{restaurantName}}</h4>
-                        <h6><u>Cuisine:</u>&nbsp{{cuisine}} </h6>
-                        <h6><u>Address</u> </h6>
-                        <h6>{{location}}</h6>
-                        <h6><u>About Us</u></h6>
-                        <h6>{{about}}</h6>
+                        <p><u>Cuisine:</u>&nbsp{{cuisine}} </p>
+                        <p><u>Address</u></p>
+                        <p>{{location}}</p>
+                        <p><u>About Us</u></p>
+                        <p>{{about}}</p>
                         </br>
                     </div>
                 </a>
                 {{/each}}
-            <p>Don't see what you're looking for?&nbsp<a href="/restaurant">Add a new restaurant.</a></p>
+            <div class="transition_bg">
+                <p>Don't see what you're looking for?&nbsp<a href="/restaurant">Add a new restaurant.</a></p>
+            </div>
         </div>
     </div>
 </section>

@@ -18,6 +18,8 @@
     "cookie-parser": "*",
     "mongodb": "*",
     "mongoose": "*",
-    "speakingurl": "*"
+    "speakingurl": "*",
+    "gridfs-stream": "*"
+
    }
 }

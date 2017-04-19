@@ -6,12 +6,14 @@ var flash = require('connect-flash');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var fs = require('fs');
+var Grid = require('gridfs-stream');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 //connection to database
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/dishFinder');
-var db = mongoose.connection;
+var conn = mongoose.connection;
 
 // Init App
 var app = express();
@@ -21,6 +23,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
 
+//store image
+// var imgPath = path.join(__dirname, 'public/img');
+// conn.once('open', function () {
+//   var gfs = Grid(conn.db, mongoose.mongo);
+// })
 
 // BodyParser Middleware
 app.use(bodyParser.json());

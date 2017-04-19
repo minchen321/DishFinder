@@ -682,27 +682,31 @@ Media Queries Style
 
       /*==================== Search Result=========================*/
       #searchResult {
-        margin-top:100px;
+        background-image: url("../img/result_bg.jpg");
+        background-repeat: repeat-x;
+        margin-top:90px;
         padding: 60px 0;
         text-align: left;
-        margin-bottom: 500px;
+        padding-bottom: 400px;
       }
 
-      #searchResult h2 {
-        text-transform: uppercase;
-        color: black;
+      #searchResult h3 {
+        color: #fff;
       }
-
-
 
       .form-border{
         padding: 25px 10px 10px 50px;
         border-style: solid;
         border-width: 3px;
         color:black;
+        background-color: #fff;
         margin-top: 15px;
         margin-bottom: 15px;
       }
+      .transition_bg{
+        background-color: white;
+      }
+
 
 
 /* ============================= Restaurant_info======================== */
