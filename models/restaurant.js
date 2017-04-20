@@ -20,6 +20,9 @@ var RestaurantSchema = mongoose.Schema({
     item: {
       type:String
     },
+    // img: { 
+    //   data: Buffer, 
+    // },
     about:{
       type:String
     },

@@ -29,13 +29,20 @@
                 {{#each restaurants}}
                 <a href="/restaurant/{{this.slug}}">
                     <div class="form-border">
-                        <h4>{{restaurantName}}</h4>
-                        <p><u>Cuisine:</u>&nbsp{{cuisine}} </p>
-                        <p><u>Address</u></p>
-                        <p>{{location}}</p>
-                        <p><u>About Us</u></p>
-                        <p>{{about}}</p>
-                        </br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                            <h4>{{restaurantName}}</h4>
+                            <p><u>Cuisine:</u>&nbsp{{cuisine}} </p>
+                            <p><u>Address</u></p>
+                            <p>{{location}}</p>
+                            <p><u>About Us</u></p>
+                            <p>{{about}}</p>
+                            </br>
+                            </div>
+                        <div class="col-sm-6">
+                            <img id="result_img" src="/img/restaurant.jpg"/>
+                        </div> 
+                        </div>   
                     </div>
                 </a>
                 {{/each}}

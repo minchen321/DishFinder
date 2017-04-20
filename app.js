@@ -6,8 +6,6 @@ var flash = require('connect-flash');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-var fs = require('fs');
-var Grid = require('gridfs-stream');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 //connection to database

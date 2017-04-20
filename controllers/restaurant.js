@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var getSlug = require('speakingurl');
+// var fs = require('fs');
+// var Grid = require('gridfs-stream');
 var Restaurant = require('../models/restaurant');
 
 router.get('/', function(req,res){
@@ -14,6 +16,7 @@ router.post('/', function(req, res){
 	var website = req.body.website;
 	var cuisine = req.body.cuisine;
 	var item = req.body.item;
+	// var imgPath = req.body.img;
 	var about = req.body.about;
 	var slug = getSlug(req.body.restaurantName.toLowerCase());
 	// Validation
@@ -38,6 +41,7 @@ router.post('/', function(req, res){
 				cuisine:cuisine,
 				item:item,
 				about:about,
+				// img: fs.readFileSync(imgPath),
 				slug:slug
 			});
 
@@ -46,8 +50,8 @@ router.post('/', function(req, res){
 			});
 			req.flash('success_msg', 'Your business has been successfully added to our database.');
 			res.redirect('/');
-		}
-});
+		}//else
+});//post
 router.get('/:slug', function(req,res){
 	var currentSlug = req.params.slug;
 	Restaurant.findOne({slug: currentSlug}, function(err, this_restaurant){
