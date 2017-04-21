@@ -20,6 +20,5 @@
     "mongoose": "*",
     "speakingurl": "*",
     "gridfs-stream": "*"
-
    }
 }

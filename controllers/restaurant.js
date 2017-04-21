@@ -16,6 +16,7 @@ router.post('/', function(req, res){
 	var website = req.body.website;
 	var cuisine = req.body.cuisine;
 	var item = req.body.item;
+	var category = req.body.category;
 	// var imgPath = req.body.img;
 	var about = req.body.about;
 	var slug = getSlug(req.body.restaurantName.toLowerCase());
@@ -39,7 +40,10 @@ router.post('/', function(req, res){
 				phone:phone,
 				website:website,
 				cuisine:cuisine,
-				item:item,
+				items:[{
+					item:item,
+					category:category
+				}],
 				about:about,
 				// img: fs.readFileSync(imgPath),
 				slug:slug

@@ -679,6 +679,13 @@ Media Queries Style
         width: 345px;
       }
 
+      #category{
+        margin-top: 20px;
+        margin-bottom: -15px;
+      }
+
+
+
 
       /*==================== Search Result=========================*/
       #searchResult {
@@ -723,10 +730,34 @@ Media Queries Style
         height: 300px;
         background-image: url("../img/header.jpg");
         background-repeat: repeat-x;
-        padding: 50px 0px 10px 250px;
+        /*padding: 50px 0px 10px 250px;*/
       }
-
+      
       #imgSize{
         height:230px;
         width: 360px;
+      }
+
+      #restaurant_image{
+        padding: 50px 50px 10px 300px;
+      }
+
+      #about{
+        padding: 50px 50px 10px 10px;
+      }
+
+      #Menu{
+        text-align: center;
+        /* background-image: url("../img/menu-border.png");*/
+/*        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;*/
+  /*      background-position: center;
+        background-repeat: no-repeat;*/
+      }
+
+      #section-title{
+        padding-top: 30px;
+        font-size: 50px;
       }

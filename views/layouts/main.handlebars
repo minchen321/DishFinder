@@ -55,7 +55,7 @@
             e.preventDefault();
             if(x < max_fields){ //max input box allowed
                 x++; //text box increment
-                $(wrapper).append('<div><input type="text" class="form-control" name="item" placeholder="Item" style="margin-top:20px;"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+                $(wrapper).append('<div><select id="category" class="form-control btn-transparent" name="category"><option selected>Category</option><option>Appetizer</option><option>Breakfast & Brunch</option><option>Noodle</option><option>Drink</option><option>Lunch</option><option>Pizza</option><option>Salad</option><option>Sashimi</option><option>Sides</option><option>Soup</option></select><input type="text" class="form-control" name="item" placeholder="Item" style="margin-top:20px;"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
             }
         });
 
