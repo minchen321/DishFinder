@@ -55,7 +55,7 @@
             e.preventDefault();
             if(x < max_fields){ //max input box allowed
                 x++; //text box increment
-                $(wrapper).append('<div><select id="category" class="form-control btn-transparent" name="category"><option selected>Category</option><option>Appetizer</option><option>Breakfast & Brunch</option><option>Noodle</option><option>Drink</option><option>Lunch</option><option>Pizza</option><option>Salad</option><option>Sashimi</option><option>Sides</option><option>Soup</option></select><input type="text" class="form-control" name="item" placeholder="Item" style="margin-top:20px;"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+                $(wrapper).append('<div><select id="category" class="form-control btn-transparent" name="category"><option selected>Category</option><option>Appetizer</option><option>Breakfast & Brunch</option><option>Noodle</option><option>Drink</option><option>Lunch</option><option>Pizza</option><option>Salad</option><option>Sashimi</option><option>Sides</option><option>Soup</option></select><input type="text" class="form-control menu_item" name="item" placeholder="Item" style="margin-top:20px;"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
             }
         });
 
@@ -64,6 +64,16 @@
         });
     });
     </script>
+     <script type="text/javascript">
+            function itemFunction(){
+                var itemElements = document.getElementsByClassName('menu_item');
+                for(var i=0; itemElements[i]; i++){
+                    // if(itemElements[i].checked){
+                        checkedPosition.push(itemElements[i]);
+                    // }
+                }
+            }
+    </script> 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa18xChQ_4AQ13DHUDMFCiHHpgtnkrXo8&libraries=places&callback=initAutocomplete" async defer></script>
     <script type="text/javascript">
             function initAutocomplete() {

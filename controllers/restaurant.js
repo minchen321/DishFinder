@@ -15,8 +15,10 @@ router.post('/', function(req, res){
 	var phone = req.body.phone;
 	var website = req.body.website;
 	var cuisine = req.body.cuisine;
-	var item = req.body.item;
-	var category = req.body.category;
+	var items = [];
+		for(var i = req.body.item.length - 1; i >= 0; i --) {
+  			items.push({item: req.body.item[i], category: req.body.category[i]});
+  		}
 	// var imgPath = req.body.img;
 	var about = req.body.about;
 	var slug = getSlug(req.body.restaurantName.toLowerCase());
@@ -40,10 +42,7 @@ router.post('/', function(req, res){
 				phone:phone,
 				website:website,
 				cuisine:cuisine,
-				items:[{
-					item:item,
-					category:category
-				}],
+				items: items,
 				about:about,
 				// img: fs.readFileSync(imgPath),
 				slug:slug

@@ -73,7 +73,6 @@ app.use(function (req, res, next) {
   next();
 });
 
-
 //Set controllers
 app.use(require('./controllers'));
 
