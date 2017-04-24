@@ -36,11 +36,46 @@
             </div> 
         </div>  
         <div id="Menu">
-            <!-- <div class="col-lg-12"> -->
-                <p id="section-title">Menu</p>
-                {{#each restaurant}}
-                    <p>{{items}}</p>
-                 {{/each}}
-           <!--  </div> -->
+<!--         for(int i = 0; i < restaurant.items.length; i++){
+            var current;
+            var category[restaurant.items.length];
+            if(restaurant.items.category[i] != current)
+                render(current);    } -->
+            <p id="section-title">Menu</p>
+                <!-- {{#each restaurant.items}}
+                    <p>{{item}}</p>
+                {{/each}} -->
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h4 style="text-align:left; font-weight:bold;">Noodles</h4>
+                </div>
+            </div>
+            <div class = "col-md-3"></div>
+            <div class="item_box col-md-6">
+                <div data-toggle="collapse" data-target="#item">
+                    <h5>Pork Ramen
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i></h5>
+                </div>
+                <div id="item" class="collapse">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img id="dish_img" src="/img/ramen.jpg"/>
+                        </div>
+                    </div> <!-- row -->
+                    <hr>
+                    <p>comment_1</p>
+                    <hr>
+                    <p>comment_1</p>
+                </div><!--  item -->
+                
+            </div>
+            <div class = "col-md-3"></div>
         </div>  
 </section>
